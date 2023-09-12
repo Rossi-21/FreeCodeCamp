@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Projet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1 id="title">"Hello Nurse"</h1>
+  <p id="description">-Yakko</p>
+    <form id="survey-form">
+        <fieldset>
+          <label id="name-label" for="name">
+          Name: 
+          <input id="name" type="text" placeholder="Enter your name..." required />
+        </label>
+        <label id="email-label" for="email">
+          Email: 
+          <input id="email" type="email" placeholder="Enter your email..." required />
+        </label>
+        <label id="number-label" for="number">
+          Number: 
+          <input id="number" type="number" min="0" max="300" placeholder="Enter a number..." >
+        </label>
+        </fieldset>
+        <fieldset>
+          <label id="dropdown-label" for="dropdown">
+          Fruit or Vegatable:  
+          <select id="dropdown">
+            <option></option>
+            <option>Grapes</option>
+            <option>Carrots</option>
+          </select>
+        </label>
+        <label>
+          Red 
+          <input name="color" value="red" type="radio"/>
+        </label>
+        <label>
+          Blue 
+          <input name="color" value="blue" type="radio"/>
+        </label>
+        <label>
+          Animal 
+          <input name="group" value="animal" type="checkbox"/>
+        </label>
+        <label>
+          Mineral
+          <input name="group" value="mineral" type="checkbox"/>
+        </label>
+        <label>
+        </fieldset>
+        <fieldset>
+          Tell us about yourself:
+          <textarea id="about" name="about"rows="12" cols="30"></textarea>
+        </label>
+        </fieldset>  
+        <button id="submit" type="submit">Submit</button>
+    </form>
+  
+</body>
+</html>
