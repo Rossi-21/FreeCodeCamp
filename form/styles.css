@@ -11,11 +11,27 @@ body {
     margin: 0;
     color: #F1D5B0;
     background-color: #243130;
+}
+
+body, fieldset{
     display:flex;
     flex-direction: column;
     align-items: center;
-    
 }
+
+fieldset{
+    padding: 2em 0 2em 0;
+    border: none;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
 form{
     width: 60vw;
     max-width: 700px;
@@ -28,8 +44,22 @@ h1, p {
     margin: 1rem auto;
 }
 
-fieldset{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+#number-label, #name-label, #email-label, #dropdown-label{
+    width: 15rem;
 }
+
+#email-label, #number-label{
+    margin-top: 1em;
+}
+
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    }
+
+
+
+
+
