@@ -11,58 +11,59 @@
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 id="title">"Hello Nurse"</h1>
-    <p id="description">-Yakko</p>
-    <form id="survey-form">
-        <fieldset>
-            <label id="name-label" for="name">
-                Name: 
-                <input id="name" type="text" placeholder="Enter your name..." required />
-            </label>
-            <label id="email-label" for="email">
-                Email: 
-                <input id="email" type="email" placeholder="Enter your email..." required />
-            </label>
-            <label id="number-label" for="number">
-                Number: 
-                <input id="number" type="number" min="0" max="300" placeholder="Enter a number..." >
-            </label>
-        </fieldset>
-        <hr/>
-        <fieldset class="choose">
-            <label id="dropdown-label" for="dropdown">
-                Fruit or Vegatable:  
-                <select id="dropdown">
-                    <option></option>
-                    <option>Grapes</option>
-                    <option>Carrots</option>
-                </select>
-            </label>
-            <label for="red">
-                Red 
-                <input name="color" value="red" type="radio"  class="inline"/>
-            </label>
-            <label>
-                Blue 
-                <input name="color" value="blue" type="radio" class="inline"/>
-            </label>
-            <label>
-                Animal 
-                <input name="group" value="animal" type="checkbox"/>
-            </label>
-            <label>
-                Mineral
-                <input name="group" value="mineral" type="checkbox"/>
-            </label>
-        </fieldset>
-        <fieldset>
-            <label>
-                Tell us about yourself:
-                <textarea id="about" name="about"rows="12" cols="30"></textarea>
-            </label>
-        </fieldset>  
-        <button id="submit" type="submit">Submit</button>
-    </form>
-  
+    <div class="container">
+        <h1 id="title">"Hello Nurse"</h1>
+        <p id="description">-Yakko</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label" for="name">
+                    Name: 
+                    <input id="name" type="text" placeholder="Enter your name..." required />
+                </label>
+                <label id="email-label" for="email">
+                    Email: 
+                    <input id="email" type="email" placeholder="Enter your email..." required />
+                </label>
+                <label id="number-label" for="number">
+                    Number: 
+                    <input id="number" type="number" min="0" max="300" placeholder="Enter a number..." >
+                </label>
+            </fieldset>
+            <hr/>
+            <fieldset class="choose">
+                <label id="dropdown-label" for="dropdown">
+                    Fruit or Vegatable:  
+                    <select id="dropdown">
+                        <option></option>
+                        <option>Grapes</option>
+                        <option>Carrots</option>
+                    </select>
+                </label>
+                <label for="red" class="red">
+                    Red 
+                    <input name="color" value="red" type="radio"  class="inline"/>
+                </label>
+                <label>
+                    Blue 
+                    <input name="color" value="blue" type="radio" class="inline"/>
+                </label>
+                <label>
+                    Animal 
+                    <input name="group" value="animal" type="checkbox" class="inline"/>
+                </label>
+                <label>
+                    Mineral
+                    <input name="group" value="mineral" type="checkbox" class="inline"/>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    Tell us about yourself:
+                    <textarea id="about" name="about"rows="12" cols="30"></textarea>
+                </label>
+            </fieldset>  
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
