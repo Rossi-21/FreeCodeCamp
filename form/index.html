@@ -12,8 +12,10 @@
 </head>
 <body>
     <div class="container">
-        <h1 id="title">"Hello Nurse"</h1>
-        <p id="description">-Yakko</p>
+        <div class="nav">
+            <h1 id="title">"Hello Nurse"</h1>
+            <p id="description">-Yakko</p>
+        </div>
         <form id="survey-form">
             <fieldset>
                 <label id="name-label" for="name">
@@ -30,7 +32,7 @@
                 </label>
             </fieldset>
             <hr/>
-            <fieldset class="choose">
+            <fieldset>
                 <label id="dropdown-label" for="dropdown">
                     Fruit or Vegatable:  
                     <select id="dropdown">
@@ -41,25 +43,26 @@
                 </label>
                 <label for="red" class="red">
                     Red 
-                    <input name="color" value="red" type="radio"  class="inline"/>
+                    <input name="color" id="red" value="red"  type="radio"  class="inline"/>
                 </label>
                 <label>
                     Blue 
-                    <input name="color" value="blue" type="radio" class="inline"/>
+                    <input name="color" id="blue" value="blue" type="radio" class="inline"/>
                 </label>
-                <label>
+                <label id="animal">
                     Animal 
-                    <input name="group" value="animal" type="checkbox" class="inline"/>
+                    <input name="group"  value="animal" type="checkbox" class="inline"/>
                 </label>
                 <label>
                     Mineral
-                    <input name="group" value="mineral" type="checkbox" class="inline"/>
+                    <input name="group" id="mineral" value="mineral" type="checkbox" class="inline"/>
                 </label>
             </fieldset>
+            <hr/>
             <fieldset>
                 <label>
                     Tell us about yourself:
-                    <textarea id="about" name="about"rows="12" cols="30"></textarea>
+                    <textarea id="about" name="about"rows="12" cols="10"></textarea>
                 </label>
             </fieldset>  
             <button id="submit" type="submit">Submit</button>

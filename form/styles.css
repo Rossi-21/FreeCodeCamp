@@ -14,16 +14,15 @@ body {
 }
 
 .container{
-    width: 50%;
+    width: 36rem;
     margin-left: 25%;
     padding: 5px;
-    border:2px solid black;
 }
 
 h1, p {
     margin: 1em auto;
     text-align: center;
-  }
+}
 
 body, fieldset{
     display:flex;
@@ -33,9 +32,9 @@ body, fieldset{
 }
 
 fieldset{
+    width: 100%;
     padding: 2em 0 2em 0;
     border: none;
-    margin-left: 50% ;
 }
 
 input,
@@ -46,16 +45,19 @@ select {
     min-height: 2em;
 }
 
+textarea{
+    width: 200%;
+}
+
 form{
     width: 100%;
-    max-width: 300px;
     min-width: 150px;
     margin: 0;
     padding-bottom: 2em;
 }
 
 hr{
-    width: 200%;
+    width:35em;
 }
 
 #number-label, #name-label, #email-label, #dropdown-label{
@@ -75,6 +77,23 @@ hr{
 .red{
     margin-top: 1em;
 }
+
+#dropdown{
+    margin-bottom: 2rem;
+}
+
+#animal{
+    margin-top: 2em;
+}
+
+.nav{
+    border-bottom: 2px solid white;
+}
+
+button{
+    width: 100%;
+}
+
 
 
 
